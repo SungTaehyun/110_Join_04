@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"
+"http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+
+<mapper namespace="com.feb.name.dao.LoginDao">
+
+	<select id="login" parameterType="String" resultType="Member">
+		select * from lecture.member
+		where member_id = #{memberId}
+	</select>
+
+
+</mapper>
